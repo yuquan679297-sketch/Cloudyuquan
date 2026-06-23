@@ -185,12 +185,12 @@ Out of scope for W-11:
 
 The current desktop UI includes a few lightweight helpers around the core voice workflow:
 
-- A first-run guide that points the user to the next missing setup step.
-- A local diagnostics panel for checking ASR credentials, LLM credentials, shortcut state, prompt history mode, and clipboard availability.
-- An editable Codex-ready Prompt area where manual copy uses the edited text rather than the original generated text.
-- A manual-copy fallback that exposes a selectable textarea when clipboard write fails.
-- A small developer-only manual text refinement panel for validating prompt behavior without recording audio.
-- A recent-results panel where the latest 5 prompts can be reused or copied directly.
+- A three-part workspace: brand and status, recording controls, and a result workspace.
+- A single settings entry that opens an overlay drawer with ASR, LLM, shortcut, clipboard, and diagnostics status cards.
+- Workflow-state feedback for idle, recording, recognition, refinement, completion, and failure, plus live audio-level visualization while recording.
+- Refined/raw result switching and a preview/edit mode where copy uses the current edited text.
+- A manual-copy fallback that exposes selectable text when clipboard writing fails.
+- A compact recent-prompt panel where generated prompts can be reused or copied locally.
 
 Not currently implemented:
 

@@ -1,0 +1,77 @@
+name: Bug report
+description: Report a reproducible problem in VoiceHub.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Do not include API keys, access tokens, private transcripts, or unredacted logs.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials and sensitive transcript content from this report.
+          required: true
+        - label: I searched existing issues for a duplicate.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: VoiceHub version or commit
+      placeholder: v0.1.0 or a Git commit hash
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: macOS version and device architecture
+      placeholder: macOS 15.0, Apple Silicon
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Recording or microphone permission
+        - ASR recognition
+        - LLM refinement
+        - Shortcut or accessibility permission
+        - Prompt result or copy behavior
+        - Settings or diagnostics
+        - Build or development setup
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and redacted diagnostics
+      description: Remove keys, full endpoint credentials, and private speech content before submitting.
+    validations:
+      required: true
