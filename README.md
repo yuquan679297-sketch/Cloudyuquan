@@ -3,7 +3,11 @@
 [![CI](https://github.com/yuquan679297-sketch/Cloudyuquan/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/yuquan679297-sketch/Cloudyuquan/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6d5cff.svg)](LICENSE)
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 > 将中文开发语音整理为可直接交给 Codex 的结构化 Prompt。
+
+VoiceHub / 语枢是一款面向中文开发者的 macOS 桌面应用：按住说话、松开识别，通过 LLM 整理成结构化 Prompt，确认后复制到 Codex 工作流。完整中文说明见 [README.zh-CN.md](README.zh-CN.md)。
 
 VoiceHub is a macOS desktop app for Chinese-speaking developers. Hold to talk, release to transcribe, refine the result with an LLM, review it, and copy a compact Codex-ready instruction into your coding workflow.
 
