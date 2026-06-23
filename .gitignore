@@ -1,0 +1,12 @@
+# Keeps generated dependencies and build outputs out of version control.
+node_modules/
+dist/
+.tmp-tests/
+src-tauri/target/
+src-tauri/gen/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.voicehub.dev.json

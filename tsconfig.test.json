@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": false,
+    "outDir": ".tmp-tests"
+  },
+  "include": [
+    "src/asrDiagnostics.ts",
+    "src/browserStorage.ts",
+    "src/errorMessages.ts",
+    "src/llmConfig.ts",
+    "src/llmPresets.ts",
+    "src/promptDisplayState.ts",
+    "src/triggerKeyConfig.ts",
+    "src/uiWorkflow.ts"
+  ]
+}

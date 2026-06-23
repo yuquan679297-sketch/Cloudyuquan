@@ -1,0 +1,14 @@
+{
+  "asr": {
+    "apiKey": "your-doubao-asr-api-key",
+    "appKey": "",
+    "accessKey": "",
+    "resourceId": "volc.seedasr.sauc.duration",
+    "endpoint": "wss://openspeech.bytedance.com/api/v3/sauc/bigmodel_async"
+  },
+  "llm": {
+    "apiKey": "your-llm-api-key",
+    "apiBase": "https://api.deepseek.com/v1",
+    "model": "deepseek-v4-flash"
+  }
+}

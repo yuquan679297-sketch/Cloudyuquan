@@ -1,0 +1,40 @@
+# Cargo manifest — defines the 语枢 (VoiceHub) Rust backend crate and dependencies.
+[package]
+name = "voicehub"
+version = "0.1.0"
+description = "Voice command refiner for Chinese developers using Codex."
+authors = ["语枢 (VoiceHub)"]
+edition = "2021"
+
+[lib]
+name = "voicehub_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.21", features = ["native-tls"] }
+futures-util = "0.3"
+anyhow = "1"
+log = "0.4"
+env_logger = "0.11"
+base64 = "0.22"
+rand = "0.8"
+flate2 = "1"
+once_cell = "1"
+regex = "1"
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
+
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+tauri-plugin-global-shortcut = "2"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-foundation = "0.10.1"
+core-graphics = "0.25.0"
+security-framework = "3.7.0"
